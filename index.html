@@ -20,7 +20,7 @@
 
     <script>
     async function fetchWeather() {
-    const apiKey = "02298453bf8230604707a6af1f6c2aa2"; // ← 换成你的API Key
+    const apiKey = "02298453bf8230604707a6af1f6c2aa2"; // 天气获取API Key
     const city = document.getElementById('city-input').value.trim();
     const resultDiv = document.getElementById('weather-result');
     if (!city) {
@@ -48,7 +48,7 @@
     } catch (error) {
         resultDiv.innerHTML = "获取天气数据失败，请稍后重试。";
     }
-}// 这里我们暂时留空，下一步会添加获取天气数据的JS代码
+}// 这里是获取天气数据的JS代码
     </script>
 </body>
 </html>
